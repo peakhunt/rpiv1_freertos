@@ -29,8 +29,8 @@ freertos/list.c \
 freertos/queue.c \
 freertos/tasks.c \
 freertos/timers.c \
-freertos/portable/GCC/RaspberryPi/port.c \
-freertos/portable/GCC/RaspberryPi/portisr.c \
+freertos/portable/GCC/bcm2835/port.c \
+freertos/portable/GCC/bcm2835/portisr.c \
 freertos/portable/MemMang/heap_4.c \
 drivers/gpio.c \
 drivers/irq.c \
@@ -88,7 +88,7 @@ AS_INCLUDES =
 # C includes
 C_INCLUDES =  \
 -Ifreertos/include \
--Ifreertos/portable/GCC/RaspberryPi \
+-Ifreertos/portable/GCC/bcm2835 \
 -Idrivers \
 -Idemo
 
