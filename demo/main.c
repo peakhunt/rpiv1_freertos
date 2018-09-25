@@ -14,9 +14,9 @@ task1(void *pParam)
   {
     i++;
     SetGpio(16, 1);
-    vTaskDelay(50);
+    vTaskDelay(250);
     SetGpio(16, 0);
-    vTaskDelay(50);
+    vTaskDelay(250);
   }
 }
 
